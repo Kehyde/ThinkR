@@ -1,0 +1,45 @@
+<%- include('./partials/header.ejs') %>
+
+    <body>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+
+                    <!-- Back Button -->
+                    <a href="/" class="btn btn-outline-info mb-3">
+                        ← Back to My Notes
+                    </a>
+
+                    <!-- Title centered above form -->
+                    <h1 class="text-center mb-4">
+                        <%= title %>
+                    </h1>
+
+                    <!-- Form -->
+                    <form action="/add" method="POST">
+
+                        <!-- Note Name -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Note Name:</label>
+                            <input type="text" id="name" name="name" class="form-control" required />
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description:</label>
+                            <textarea id="description" name="description" class="form-control" rows="4"
+                                required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-outline-info">Add Note</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
