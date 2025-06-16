@@ -35,8 +35,6 @@ npm install
 Create a .env file in the root directory with the following:
 
 ```ini
-Copy
-Edit
 CONNECT=your_mongodb_connection_string
 PASSPORT_SECRET=your_session_secret
 PASSPORT_COOKIE_KEY=your_cookie_key
@@ -76,8 +74,8 @@ HTTP status codes indicate success or error (e.g., 200, 201, 400, 401, 404, 500)
 Example registration request body:
 ```json
 {
-  "username": "kennyh",
-  "email": "ken@example.com",
+  "username": "bobH",
+  "email": "bob@example.com",
   "password": "yourpassword123"
 }
 ```
