@@ -12,7 +12,6 @@ import helmet from "helmet";
 import methodOverride from "method-override";
 import "./handlers/passport.js";
 
-// create express app
 export const app = express();
 
 // hidePoweredBy
